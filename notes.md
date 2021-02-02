@@ -82,3 +82,24 @@ routes.rb
 ```
 - now we can go to http://localhost:3000/home/about
 
+## Bootstrap
+---
+https://getbootstrap.com/
+
+Docs --> copy "Starter template"
+
+views/layouts/application.html.erb
+
+paste in bootstrap template
+
+copy these from the old erb file into the head
+```erb
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+```
+copy over <%= yield > into the body
+
+
