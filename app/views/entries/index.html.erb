@@ -2,27 +2,30 @@
 
 <h1>Entries</h1>
 
-<table>
-  <thead>
-    <tr>
+<table class="table">
+  <thead >
+    <tr class="table-dark">
       <th>Food</th>
       <th>Activity</th>
       <th>Feeling</th>
       <th>Pain</th>
+      <th>Created</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @entries.each do |entry| %>
+    <% pain_styling = entry.pain.include?("back") ? "table-danger" : "" %>
       <tr>
         <td><%= entry.food %></td>
         <td><%= entry.activity %></td>
         <td><%= entry.feeling %></td>
-        <td><%= entry.pain %></td>
+        <td class=<%= pain_styling%> ><%= entry.pain %></td>
+        <td><%= entry.created_at.strftime("%m/%d/%Y at %I:%M%p") %></td>
         <td><%= link_to 'Show', entry %></td>
         <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
-        <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +33,6 @@
 
 <br>
 
-<%= link_to 'New Entry', new_entry_path %>
+<%= link_to 'New Entry', new_entry_path, class:"btn btn-secondary" %>
+
+

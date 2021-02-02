@@ -12,26 +12,31 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :food %>
-    <%= form.text_field :food %>
+    <%= form.text_field :food, class:"form-control", placeholder:"foods", autofocus: true %>
   </div>
+  
+  <br>
 
   <div class="field">
-    <%= form.label :activity %>
-    <%= form.text_field :activity %>
+    <%= form.text_field :activity, class:"form-control", placeholder:"activity" %>
   </div>
+  
+  <br>
 
   <div class="field">
-    <%= form.label :feeling %>
-    <%= form.text_field :feeling %>
+    <%= form.text_field :feeling, class:"form-control", placeholder:"feeling" %>
   </div>
 
+  <br>
+
   <div class="field">
-    <%= form.label :pain %>
-    <%= form.text_field :pain %>
+    <%= form.text_field :pain, class:"form-control", placeholder:"pain" %>
   </div>
+
+  <br>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-dark"%>
   </div>
+  <br>
 <% end %>
