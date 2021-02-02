@@ -1,5 +1,8 @@
-```console
-create  app/controllers/home_controller.rb
+```
+$ rails g controller home index
+```
+```
+      create  app/controllers/home_controller.rb
        route  get 'home/index'
       invoke  erb
       create    app/views/home
