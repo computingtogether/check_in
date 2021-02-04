@@ -14,7 +14,8 @@ class EntriesController < ApplicationController
 
   # GET /entries/new
   def new
-    @entry = Entry.new
+    # @entry = Entry.new
+    @entry = current_user.entries.build
   end
 
   # GET /entries/1/edit
@@ -23,7 +24,9 @@ class EntriesController < ApplicationController
 
   # POST /entries or /entries.json
   def create
-    @entry = Entry.new(entry_params)
+    # @entry = Entry.new(entry_params)
+    @entry = current_user.entries.build(entry_params)
+
 
     respond_to do |format|
       if @entry.save
@@ -59,7 +62,7 @@ class EntriesController < ApplicationController
   end
 
   def correct_user
-    @entry = current_user.entries.find_by(:id params[:id])
+    @entry = current_user.entries.find_by(id: params[:id])
     redirect_to entries_path, notice: "Not authorized to edit this Entry" if @entry.nil?
   end
 
