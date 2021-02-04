@@ -1,5 +1,7 @@
 class EntriesController < ApplicationController
   before_action :set_entry, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: [ :index,:show ]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /entries or /entries.json
   def index
@@ -56,6 +58,11 @@ class EntriesController < ApplicationController
     end
   end
 
+  def correct_user
+    @entry = current_user.entries.find_by(:id params[:id])
+    redirect_to entries_path, notice: "Not authorized to edit this Entry" if @entry.nil?
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_entry
@@ -64,6 +71,6 @@ class EntriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def entry_params
-      params.require(:entry).permit(:food, :activity, :feeling, :pain)
+      params.require(:entry).permit(:food, :activity, :feeling, :pain, :user_id)
     end
 end
