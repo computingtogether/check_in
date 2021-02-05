@@ -3,4 +3,8 @@
 <%= render 'form', entry: @entry %>
 
 <%= link_to 'Show', @entry,  class:"btn btn-secondary" %> 
+<%= link_to 'Delete', @entry, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %>
+<br>
+<br>
 <%= link_to 'Back', entries_path, class:"btn btn-secondary" %>
+

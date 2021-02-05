@@ -1,0 +1,737 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red251\green0\blue7;\red36\green255\blue255;\red35\green255\blue6;
+\red255\green255\blue11;\red0\green0\blue0;\red202\green202\blue202;\red255\green255\blue255;\red109\green109\blue109;
+\red71\green137\blue205;\red141\green212\blue254;\red194\green126\blue101;\red202\green202\blue202;\red183\green111\blue179;
+\red255\green255\blue255;\red67\green192\blue160;\red88\green138\blue67;\red212\green213\blue154;\red27\green31\blue34;
+\red255\green255\blue255;\red21\green23\blue26;\red21\green24\blue26;\red255\green255\blue255;\red251\green0\blue7;
+\red203\green203\blue202;\red109\green109\blue109;\red71\green138\blue206;\red141\green213\blue254;\red194\green125\blue100;
+\red0\green0\blue0;\red255\green255\blue255;\red203\green203\blue202;\red71\green138\blue206;\red183\green111\blue179;
+\red141\green213\blue254;\red202\green202\blue202;\red109\green109\blue109;\red71\green137\blue205;\red141\green212\blue254;
+\red194\green126\blue101;\red202\green202\blue202;\red183\green111\blue179;\red67\green192\blue160;\red251\green0\blue7;
+\red203\green203\blue202;\red212\green213\blue154;\red167\green197\blue151;\red212\green213\blue153;\red194\green125\blue100;
+\red88\green138\blue67;\red34\green255\blue6;\red34\green255\blue6;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c12195\c0;\cssrgb\c4983\c100000\c100000;\cssrgb\c0\c100000\c0;
+\cssrgb\c100000\c100000\c0;\cssrgb\c0\c1\c1;\cssrgb\c83229\c83229\c83125;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c50251\c50251\c50189;
+\cssrgb\c33936\c61427\c84130;\cssrgb\c61361\c86489\c99746;\cssrgb\c80778\c56830\c46925;\cssrgb\c83137\c83137\c83137;\cssrgb\c77331\c52624\c75301;
+\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c30610\c78876\c69022;\cssrgb\c41525\c59950\c33208;\cssrgb\c86261\c86245\c66529;\cssrgb\c14118\c16078\c18039;
+\cssrgb\c100000\c100000\c100000;\cssrgb\c10588\c12157\c13725\c5098;\cssrgb\c10611\c12182\c13738\c5098;\cssrgb\c100000\c100000\c99971\c0;\cssrgb\c99893\c12008\c0;
+\cssrgb\c83320\c83320\c83112;\cssrgb\c50307\c50306\c50181;\cssrgb\c34146\c61677\c84338;\cssrgb\c61545\c86704\c99884;\cssrgb\c80772\c56796\c46790;
+\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c83320\c83320\c83112;\cssrgb\c34146\c61677\c84338;\cssrgb\c77407\c52698\c75307;
+\cssrgb\c61545\c86704\c99884;\cssrgb\c83229\c83229\c83125;\cssrgb\c50251\c50251\c50189;\cssrgb\c33936\c61427\c84130;\cssrgb\c61361\c86489\c99746;
+\cssrgb\c80778\c56830\c46925;\cssrgb\c83137\c83137\c83137;\cssrgb\c77331\c52624\c75301;\cssrgb\c30610\c78876\c69022;\cssrgb\c100000\c12195\c0;
+\cssrgb\c83411\c83411\c83098;\cssrgb\c86261\c86245\c66529;\cssrgb\c71008\c80807\c65805;\cssrgb\c86247\c86215\c66392;\cssrgb\c80772\c56796\c46790;
+\cssrgb\c41525\c59950\c33208;\cssrgb\c0\c99725\c0;\cssrgb\c0\c99725\c0;}
+\margl1440\margr1440\vieww12980\viewh12680\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \
+\cf3 Generate Controller\
+\cf2 \
+$ rails g controller home \cf4 index\cf2 \
+\
+\cf5       create  app/controllers/home_controller.rb\
+ \cf4       route  get 'home/index'\cf5 \
+      invoke  erb\
+      create    app/views/home\
+\cf4       create    app/views/home/index.html.erb\
+\cf5       invoke  test_unit\
+      create    test/controllers/home_controller_test.rb\
+      invoke  helper\
+      create    app/helpers/home_helper.rb\
+      invoke    test_unit\
+      invoke  assets\
+      invoke    scss\
+      create      app/assets/stylesheets/home.scss\cf2 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 delete the generation\cf2 \
+\
+$ rails d controller home\
+\
+\
+\cf6 now we can go to http://localhost:3000/home/index\cf2 \
+\cf6 set home page route as our home index page\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 routes.rb\cf2 \
+\
+  root 'home#index'\
+\
+\
+\cf6 view/layouts/application.html.erb is the base file for each page. \
+Add common nav bar etc. here.\cf2 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 Manually create a page without generator\
+\cf2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 - create html.erb file\
+- define controller method\
+- set route\cf2 \
+\
+\cf6 views/home\
+create new file "about.html.erb"\
+\
+home_controller.rb\cf2 \
+\
+  def about\
+  end\
+\
+\
+\cf6 routes.rb\cf2 \
+\
+  get 'home/about'\
+\
+\cf6 now we can go to http://localhost:3000/home/about\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \
+\cf3 Set Up Bootstrap\cf2 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 https://getbootstrap.com/\
+\
+Docs --> copy "Starter template"\
+\
+views/layouts/application.html.erb\
+\
+paste in bootstrap template\
+\
+copy these from the old erb file into the head\cf2 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb8 \expnd0\expndtw0\kerning0
+    \cf9 <\cf10 title\cf9 >\cf7 Check In App\cf9 </\cf10 title\cf9 >\cf7 \
+\
+    \cf10 <%=\cf7  \cf11 csrf_meta_tags\cf7  \cf10 %>\cf7 \
+    \cf10 <%=\cf7  \cf11 csp_meta_tag\cf7  \cf10 %>\cf7 \
+\
+    \cf10 <%=\cf7  \cf11 stylesheet_link_tag\cf7  \cf12 'application'\cf7 , \cf10 media:\cf7  \cf12 'all'\cf7 , \cf12 'data-turbolinks-track'\cf7 : \cf12 'reload'\cf7  \cf10 %>\cf7 \
+    \cf10 <%=\cf7  \cf11 javascript_pack_tag\cf7  \cf12 'application'\cf7 , \cf12 'data-turbolinks-track'\cf7 : \cf12 'reload'\cf7  \cf10 %>\cf13 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \kerning1\expnd0\expndtw0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 copy over <%= yield > into the body\
+\
+put <%= yield > into a div with class container\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb8 \expnd0\expndtw0\kerning0
+\
+    \cf9 <\cf10 div\cf7  \cf11 class\cf7 =\cf12 "container"\cf9 >\cf7 \
+      \cf9 <\cf10 br\cf9 >\cf7 \
+      \cf10 <%=\cf7  \cf14 yield\cf7  \cf10 %>\cf7 \
+    \cf9 </\cf10 div\cf9 >\cf13 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \kerning1\expnd0\expndtw0 \
+\
+\cf3 Create navbar partial\cf2 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 make new file in views/home called "_header.html.erb"\
+\
+views/layouts/application.html.erb\cf2 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb8 \expnd0\expndtw0\kerning0
+    \cf10 <%=\cf7  \cf11 render\cf7  \cf12 '/home/header'\cf7  \cf10 %>\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://getbootstrap.com"}}{\fldrslt \cf6 getbootstrap.com}}\cf6 , components, navbar paste in the first one.\
+\
+views/home/_header\
+\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb8 \expnd0\expndtw0\kerning0
+<\cf10 nav\cf7  \cf11 class\cf7 =\cf12 "navbar navbar-expand-lg navbar-dark bg-dark"\cf9 >\cf7 \
+  \cf9 <\cf10 div\cf7  \cf11 class\cf7 =\cf12 "container-fluid"\cf9 >\cf7 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \cb15     <a class="navbar-brand" href="#">Check In</a>\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb8     \cf9 <\cf10 button\cf7  \cf11 class\cf7 =\cf12 "navbar-toggler"\cf7  \cf11 type\cf7 =\cf12 "button"\cf7  \cf11 data-bs-toggle\cf7 =\cf12 "collapse"\cf7  \cf11 data-bs-target\cf7 =\cf12 "#navbarSupportedContent"\cf7  \cf11 aria-controls\cf7 =\cf12 "navbarSupportedContent"\cf7  \cf11 aria-expanded\cf7 =\cf12 "false"\cf7  \cf11 aria-label\cf7 =\cf12 "Toggle navigation"\cf9 >\cf7 \
+      \cf9 <\cf10 span\cf7  \cf11 class\cf7 =\cf12 "navbar-toggler-icon"\cf9 ></\cf10 span\cf9 >\cf7 \
+    \cf9 </\cf10 button\cf9 >\cf7 \
+    \cf9 <\cf10 div\cf7  \cf11 class\cf7 =\cf12 "collapse navbar-collapse"\cf7  \cf11 id\cf7 =\cf12 "navbarSupportedContent"\cf9 >\cf7 \
+      \cf9 <\cf10 ul\cf7  \cf11 class\cf7 =\cf12 "navbar-nav me-auto mb-2 mb-lg-0"\cf9 >\cf7 \
+        \cf9 <\cf10 li\cf7  \cf11 class\cf7 =\cf12 "nav-item"\cf9 >\cf7 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \cb15           <a class="nav-link" href="#">Link</a>\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb8         \cf9 </\cf10 li\cf9 >\cf7 \
+      \cf9 </\cf10 ul\cf9 >\cf7 \
+    \cf9 </\cf10 div\cf9 >\cf7 \
+  \cf9 </\cf10 div\cf9 >\cf7 \
+\cf9 </\cf10 nav\cf9 >\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 \cb1 \kerning1\expnd0\expndtw0 delete HTML a tag link and replace with erb with link_to\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb8 \expnd0\expndtw0\kerning0
+\
+<\cf10 nav\cf7  \cf11 class\cf7 =\cf12 "navbar navbar-expand-lg navbar-dark bg-dark"\cf9 >\cf7 \
+  \cf9 <\cf10 div\cf7  \cf11 class\cf7 =\cf12 "container-fluid"\cf9 >\cf7 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \cb15     <%= link_to 'Check In', root_path, class:"navbar-brand" %>\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb8     \cf9 <\cf10 button\cf7  \cf11 class\cf7 =\cf12 "navbar-toggler"\cf7  \cf11 type\cf7 =\cf12 "button"\cf7  \cf11 data-bs-toggle\cf7 =\cf12 "collapse"\cf7  \cf11 data-bs-target\cf7 =\cf12 "#navbarSupportedContent"\cf7  \cf11 aria-controls\cf7 =\cf12 "navbarSupportedContent"\cf7  \cf11 aria-expanded\cf7 =\cf12 "false"\cf7  \cf11 aria-label\cf7 =\cf12 "Toggle navigation"\cf9 >\cf7 \
+      \cf9 <\cf10 span\cf7  \cf11 class\cf7 =\cf12 "navbar-toggler-icon"\cf9 ></\cf10 span\cf9 >\cf7 \
+    \cf9 </\cf10 button\cf9 >\cf7 \
+    \cf9 <\cf10 div\cf7  \cf11 class\cf7 =\cf12 "collapse navbar-collapse"\cf7  \cf11 id\cf7 =\cf12 "navbarSupportedContent"\cf9 >\cf7 \
+      \cf9 <\cf10 ul\cf7  \cf11 class\cf7 =\cf12 "navbar-nav me-auto mb-2 mb-lg-0"\cf9 >\cf7 \
+        \cf9 <\cf10 li\cf7  \cf11 class\cf7 =\cf12 "nav-item"\cf9 >\cf7 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \cb15           <%= link_to 'About', home_about_path, class:"nav-link"%>\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb8         \cf9 </\cf10 li\cf9 >\cf7 \
+      \cf9 </\cf10 ul\cf9 >\cf7 \
+    \cf9 </\cf10 div\cf9 >\cf7 \
+  \cf9 </\cf10 div\cf9 >\cf7 \
+\cf9 </\cf10 nav\cf9 >\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \cb1 \kerning1\expnd0\expndtw0 \
+\
+\cf3 \
+Use 
+\f1\b scaffold
+\f0\b0  to create Entry database\
+\
+\cf2 $ rails g scaffold entry food:string activity:string feeling:string pain:string\
+\
+\cf5 	invoke  active_record\
+      create    db/migrate/20210202164019_create_entries.rb\
+      create    app/models/entry.rb\
+      invoke    test_unit\
+      create      test/models/entry_test.rb\
+      create      test/fixtures/entries.yml\
+      invoke  resource_route\
+       route    resources :entries\
+      invoke  scaffold_controller\
+      create    app/controllers/entries_controller.rb\
+      invoke    erb\
+      create      app/views/entries\
+      create      app/views/entries/index.html.erb\
+      create      app/views/entries/edit.html.erb\
+      create      app/views/entries/show.html.erb\
+      create      app/views/entries/new.html.erb\
+      create      app/views/entries/_form.html.erb\
+      invoke    resource_route\
+      invoke    test_unit\
+      create      test/controllers/entries_controller_test.rb\
+      create      test/system/entries_test.rb\
+      invoke    helper\
+      create      app/helpers/entries_helper.rb\
+      invoke      test_unit\
+      invoke    jbuilder\
+      create      app/views/entries/index.json.jbuilder\
+      create      app/views/entries/show.json.jbuilder\
+      create      app/views/entries/_entry.json.jbuilder\
+      invoke  assets\
+      invoke    scss\
+      create      app/assets/stylesheets/entries.scss\
+      invoke  scss\
+      create    app/assets/stylesheets/scaffolds.scss\cf3 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 created a migration, and much more, no schema yet. need to push migration into the database\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 $ rails db:migrate\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 scaffold created the entries_controller\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf14 \cb8 \expnd0\expndtw0\kerning0
+class\cf7  \cf16 EntriesController < ApplicationController\cf7 \
+  \cf11 before_action\cf7  \cf10 :set_entry\cf7 , \cf10 only:\cf7  \cf10 %i[ show edit update destroy ]\cf7 \
+\
+  \cf17 # GET /entries or /entries.json\cf7 \
+  \cf14 def\cf7  \cf18 index\cf7 \
+    \cf11 @entries\cf7  = \cf16 Entry\cf7 .\cf18 all\cf7 \
+  \cf14 end\cf7 \
+\
+  \cf17 # GET /entries/1 or /entries/1.json\cf7 \
+  \cf14 def\cf7  \cf18 show\cf7 \
+  \cf14 end\cf7 \
+\
+  \cf17 # GET /entries/new\cf7 \
+  \cf14 def\cf7  \cf18 new\cf7 \
+    \cf11 @entry\cf7  = \cf16 Entry\cf7 .\cf10 new\cf7 \
+  \cf14 end\cf7 \
+\
+  \cf17 # GET /entries/1/edit\cf7 \
+  \cf14 def\cf7  \cf18 edit\cf7 \
+  \cf14 end\cf7 \
+\
+  \cf17 # POST /entries or /entries.json\cf7 \
+  \cf14 def\cf7  \cf18 create\cf7 \
+    \cf11 @entry\cf7  = \cf16 Entry\cf7 .\cf10 new\cf7 (\cf11 entry_params\cf7 )\
+\
+    \cf11 respond_to\cf7  \cf14 do\cf7  |\cf11 format\cf7 |\
+      \cf14 if\cf7  \cf11 @entry\cf7 .\cf18 save\cf7 \
+        \cf18 format\cf7 .\cf18 html\cf7  \{ \cf11 redirect_to\cf7  \cf11 @entry\cf7 , \cf10 notice:\cf7  \cf12 "Entry was successfully created."\cf7  \}\
+        \cf18 format\cf7 .\cf18 json\cf7  \{ \cf11 render\cf7  \cf10 :show\cf7 , \cf10 status:\cf7  \cf10 :created\cf7 , \cf10 location:\cf7  \cf11 @entry\cf7  \}\
+      \cf14 else\cf7 \
+        \cf18 format\cf7 .\cf18 html\cf7  \{ \cf11 render\cf7  \cf10 :new\cf7 , \cf10 status:\cf7  \cf10 :unprocessable_entity\cf7  \}\
+        \cf18 format\cf7 .\cf18 json\cf7  \{ \cf11 render\cf7  \cf10 json:\cf7  \cf11 @entry\cf7 .\cf18 errors\cf7 , \cf10 status:\cf7  \cf10 :unprocessable_entity\cf7  \}\
+      \cf14 end\cf7 \
+    \cf14 end\cf7 \
+  \cf14 end\cf7 \
+\
+  \cf17 # PATCH/PUT /entries/1 or /entries/1.json\cf7 \
+  \cf14 def\cf7  \cf18 update\cf7 \
+    \cf11 respond_to\cf7  \cf14 do\cf7  |\cf11 format\cf7 |\
+      \cf14 if\cf7  \cf11 @entry\cf7 .\cf18 update\cf7 (\cf11 entry_params\cf7 )\
+        \cf18 format\cf7 .\cf18 html\cf7  \{ \cf11 redirect_to\cf7  \cf11 @entry\cf7 , \cf10 notice:\cf7  \cf12 "Entry was successfully updated."\cf7  \}\
+        \cf18 format\cf7 .\cf18 json\cf7  \{ \cf11 render\cf7  \cf10 :show\cf7 , \cf10 status:\cf7  \cf10 :ok\cf7 , \cf10 location:\cf7  \cf11 @entry\cf7  \}\
+      \cf14 else\cf7 \
+        \cf18 format\cf7 .\cf18 html\cf7  \{ \cf11 render\cf7  \cf10 :edit\cf7 , \cf10 status:\cf7  \cf10 :unprocessable_entity\cf7  \}\
+        \cf18 format\cf7 .\cf18 json\cf7  \{ \cf11 render\cf7  \cf10 json:\cf7  \cf11 @entry\cf7 .\cf18 errors\cf7 , \cf10 status:\cf7  \cf10 :unprocessable_entity\cf7  \}\
+      \cf14 end\cf7 \
+    \cf14 end\cf7 \
+  \cf14 end\cf7 \
+\
+  \cf17 # DELETE /entries/1 or /entries/1.json\cf7 \
+  \cf14 def\cf7  \cf18 destroy\cf7 \
+    \cf11 @entry\cf7 .\cf18 destroy\cf7 \
+    \cf11 respond_to\cf7  \cf14 do\cf7  |\cf11 format\cf7 |\
+      \cf18 format\cf7 .\cf18 html\cf7  \{ \cf11 redirect_to\cf7  \cf11 entries_url\cf7 , \cf10 notice:\cf7  \cf12 "Entry was successfully destroyed."\cf7  \}\
+      \cf18 format\cf7 .\cf18 json\cf7  \{ \cf11 head\cf7  \cf10 :no_content\cf7  \}\
+    \cf14 end\cf7 \
+  \cf14 end\cf7 \
+\
+  \cf10 private\cf7 \
+    \cf17 # Use callbacks to share common setup or constraints between actions.\cf7 \
+    \cf14 def\cf7  \cf18 set_entry\cf7 \
+      \cf11 @entry\cf7  = \cf16 Entry\cf7 .\cf18 find\cf7 (\cf11 params\cf7 [\cf10 :id\cf7 ])\
+    \cf14 end\cf7 \
+\
+    \cf17 # Only allow a list of trusted parameters through.\cf7 \
+    \cf14 def\cf7  \cf18 entry_params\cf7 \
+      \cf11 params\cf7 .\cf18 require\cf7 (\cf10 :entry\cf7 ).\cf18 permit\cf7 (\cf10 :food\cf7 , \cf10 :activity\cf7 , \cf10 :feeling\cf7 , \cf10 :pain\cf7 )\
+    \cf14 end\cf7 \
+\cf14 end\cf13 \cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 \kerning1\expnd0\expndtw0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 scaffold created a css file that is conflicting with bootstrap\
+\
+delete file      app/assets/stylsheets/scaffolds.scss\cf2 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 Add Links to \'93Show Entries\'94 and \'93New Entry\'94 to _header partial\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb8 \expnd0\expndtw0\kerning0
+        \cf9 <\cf10 li\cf7  \cf11 class\cf7 =\cf12 "nav-item"\cf9 >\cf7 \
+          \cf10 <%=\cf7  \cf11 link_to\cf7  \cf12 'Show Entries'\cf7 , \cf11 entries_path\cf7 , \cf10 class:\cf12 "nav-link"\cf10 %>\cf7 \
+        \cf9 </\cf10 li\cf9 >\cf7 \
+\
+        \cf9 <\cf10 li\cf7  \cf11 class\cf7 =\cf12 "nav-item"\cf9 >\cf7 \
+          \cf10 <%=\cf7  \cf11 link_to\cf7  \cf12 'New Entry'\cf7 , \cf11 new_entry_path\cf7 , \cf10 class:\cf12 "nav-link"\cf10 %>\cf7 \
+        \cf9 </\cf10 li\cf9 >\cf13 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \kerning1\expnd0\expndtw0 \
+\
+\cf3 Bootstrap the show entries table\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 views/entries/index\
+\
+give the table the class=\'93table\'94 from bootstrap\
+\
+to loop through entries and look for the word back in the pain column:\
+\
+models come with a created_at type datetime column, can use it to show when a new db entry was created. \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb8 \expnd0\expndtw0\kerning0
+<\cf10 tbody\cf9 >\cf7 \
+    \cf10 <%\cf7  \cf11 @entries\cf7 .\cf18 each\cf7  \cf14 do\cf7  |\cf11 entry\cf7 | \cf10 %>\cf7 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \cb15     <% pain_styling = entry.pain.include?("back") ? "table-danger" : "" %>\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb8       \cf9 <\cf10 tr\cf9 >\cf7 \
+        \cf9 <\cf10 td\cf9 >\cf10 <%=\cf7  \cf11 entry\cf7 .\cf18 food\cf7  \cf10 %>\cf9 </\cf10 td\cf9 >\cf7 \
+        \cf9 <\cf10 td\cf9 >\cf10 <%=\cf7  \cf11 entry\cf7 .\cf18 activity\cf7  \cf10 %>\cf9 </\cf10 td\cf9 >\cf7 \
+        \cf9 <\cf10 td\cf9 >\cf10 <%=\cf7  \cf11 entry\cf7 .\cf18 feeling\cf7  \cf10 %>\cf9 </\cf10 td\cf9 >\cf7 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \cb15         <td class=<%= pain_styling%> ><%= entry.pain %></td>\
+        <td><%= entry.created_at.strftime("%m/%d/%Y at %I:%M%p") %></td>\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb8         \cf9 <\cf10 td\cf9 >\cf10 <%=\cf7  \cf11 link_to\cf7  \cf12 'Show'\cf7 , \cf11 entry\cf7  \cf10 %>\cf9 </\cf10 td\cf9 >\cf7 \
+        \cf9 <\cf10 td\cf9 >\cf10 <%=\cf7  \cf11 link_to\cf7  \cf12 'Edit'\cf7 , \cf18 edit_entry_path\cf7 (\cf11 entry\cf7 ) \cf10 %>\cf9 </\cf10 td\cf9 >\cf7 \
+        \cf9 <\cf10 td\cf9 >\cf10 <%=\cf7  \cf11 link_to\cf7  \cf12 'Delete'\cf7 , \cf11 entry\cf7 , \cf10 method:\cf7  \cf10 :delete\cf7 , \cf10 data:\cf7  \{ \cf10 confirm:\cf7  \cf12 'Are you sure?'\cf7  \} \cf10 %>\cf9 </\cf10 td\cf9 >\cf7 \
+      \cf9 </\cf10 tr\cf9 >\cf7 \
+    \cf10 <%\cf7  \cf14 end\cf7  \cf10 %>\cf7 \
+  \cf9 </\cf10 tbody\cf9 >\cf7 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf6 in the _form partial for entries, to add a bootstrap button to update entry (which was a button by default in rails. For some reason there is not , between form.submit and class:\'94btn btn=dark\'94\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb8 \expnd0\expndtw0\kerning0
+<\cf10 div\cf7  \cf11 class\cf7 =\cf12 "actions"\cf9 >\cf7 \
+    \cf10 <%=\cf7  \cf11 form\cf7 .\cf18 submit\cf7  \cf10 class:\cf12 "btn btn-dark"\cf10 %>\cf7 \
+  \cf9 </\cf10 div\cf9 >\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \cb1 in the views pages for entries to bootrap buttom things just add:\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf10 \cb8 <%=\cf7  \cf11 link_to\cf7  \cf12 'Show'\cf7 , \cf11 @entry\cf4 \cb15 ,  class:"btn btn-secondary"\cf7 \cb8  \cf10 %>\cf7  \
+\cf10 <%=\cf7  \cf11 link_to\cf7  \cf12 'Back'\cf7 , \cf11 entries_path\cf4 \cb15 , class:"btn btn-secondary"\cf7 \cb8  \cf10 %>\
+\cf13 \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf3 Bootstap Alerts\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 views/layouts		create new partial \'93_alerts.html.erb\'94\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb8 <\cf10 div\cf7  \cf11 class\cf7 =\cf12 "alert alert-warning alert-dismissible fade show"\cf7  \cf11 role\cf7 =\cf12 "alert"\cf9 >\cf7 \
+  \cf9 <\cf10 strong\cf9 >\cf7 Holy guacamole!\cf9 </\cf10 strong\cf9 >\cf7  You should check in on some of those fields below.\
+  \cf9 <\cf10 button\cf7  \cf11 type\cf7 =\cf12 "button"\cf7  \cf11 class\cf7 =\cf12 "btn-close"\cf7  \cf11 data-bs-dismiss\cf7 =\cf12 "alert"\cf7  \cf11 aria-label\cf7 =\cf12 "Close"\cf9 ></\cf10 button\cf9 >\cf7 \
+\cf9 </\cf10 div\cf9 >\
+\
+<\cf10 div\cf7  \cf11 class\cf7 =\cf12 "alert alert-warning alert-dismissible fade show"\cf7  \cf11 role\cf7 =\cf12 "alert"\cf9 >\cf7 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \cb15   <%= notice %>\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb8   \cf9 <\cf10 button\cf7  \cf11 type\cf7 =\cf12 "button"\cf7  \cf11 class\cf7 =\cf12 "btn-close"\cf7  \cf11 data-bs-dismiss\cf7 =\cf12 "alert"\cf7  \cf11 aria-label\cf7 =\cf12 "Close"\cf9 ></\cf10 button\cf9 >\cf7 \
+\cf9 </\cf10 div\cf9 >\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \cb1 views/application.html.erb	add above yield but in container class.\cf13 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb8 <\cf10 div\cf7  \cf11 class\cf7 =\cf12 "container"\cf9 >\cf7 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \cb15       <% if notice %>\
+        <%= render 'layouts/alerts' %>\
+      <% end %>\cf7 \cb8 \
+      \cf10 <%=\cf7  \cf14 yield\cf7  \cf10 %>\cf7 \
+    \cf9 </\cf10 div\cf9 >\cf13 \cb1 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 delete notice from top of entries and show views for entries\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 <p id="notice"><%= notice %></p>\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf13 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf3 Devise\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 rubygems.org	devise\
+\
+add to gemfile, not in the development or test\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 gem 'devise', '~> 4.7', '>= 4.7.3'\
+\
+$ bundle install\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 on ruby gems go to devise documentation, getting started\
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf19 \cb20 $ rails generate devise:install\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb8 config/environments/development.rb\cf19 \cb21 . 		\cf6 \cb22 at bottom\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 config.action_mailer.default_url_options = \{ host: 'localhost', port: 3000 \}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb8 config/environments/production.rb\cf19 \cb21 . 		\cf6 \cb22 at bottom, comment out for now\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 #config.action_mailer.default_url_options = \{ host: \'91actal host, port: 3000 \}\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 step 3 in terminal steps for devise, flash messages\
+\
+app/views/layouts/application.html.erb		above yield, in container. only want to to show if ther is a notice from changing. Do this if you did not do Bootstap alerts\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \cb15 \
+        <p class="notice"><%= notice %></p>\
+        <p class="alert"><%= alert %></p>\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \cb23 We covered this with bootstap alerts in the alerts partial\cf4 \cb15 \
+\
+<div class="alert alert-warning alert-dismissible fade show" role="alert">\
+  <%= notice %>\
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>\
+</div>\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb8 \
+\
+this is also at the \cf13 \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 steo 4, set up views\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 $ rails g devise:views\cf6 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf13 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 done with terminal steps, now in devise documentation, our model can be called user. \
+\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf19 \cb20 $ rails generate devise MODEL\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf24 \cb8 $ rails generate devise user\
+\
+$ rails db:migrate\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \expnd0\expndtw0\kerning0
+update navbar for sign, in sign out, sign up\
+\
+home/_header\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf25 \cb8         \cf26 <\cf27 li\cf25  \cf28 class\cf25 =\cf29 "nav-item"\cf26 >\cf25 \
+          \cf27 <%=\cf25  \cf28 link_to\cf25  \cf29 'Sign Up'\cf25 , \cf28 new_user_registration_path\cf25 , \cf27 class:\cf29 "nav-link"\cf27 %>\cf25 \
+        \cf26 </\cf27 li\cf26 >\cf25 \
+\
+        \cf26 <\cf27 li\cf25  \cf28 class\cf25 =\cf29 "nav-item"\cf26 >\cf25 \
+          \cf27 <%=\cf25  \cf28 link_to\cf25  \cf29 'Sign In'\cf25 , \cf28 new_user_session_path\cf25 , \cf27 class:\cf29 "nav-link"\cf27 %>\cf25 \
+        \cf26 </\cf27 li\cf26 >\cf25 \
+\
+        \cf26 <\cf27 li\cf25  \cf28 class\cf25 =\cf29 "nav-item"\cf26 >\cf25 \
+          \cf27 <%=\cf25  \cf28 link_to\cf25  \cf29 'Sign Out'\cf25 , \cf28 destroy_user_session_path\cf25 , \cf4 \cb23 method: :delete\cf25 \cb8 , \cf27 class:\cf29 "nav-link"\cf27 %>\cf25 \
+        \cf26 </\cf27 li\cf26 >\cf25 \
+\
+        \cf26 <\cf27 li\cf25  \cf28 class\cf25 =\cf29 "nav-item"\cf26 >\cf25 \
+          \cf27 <%=\cf25  \cf28 link_to\cf25  \cf29 'Edit Profile'\cf25 , \cf28 edit_user_registration_path\cf25 , \cf27 class:\cf29 "nav-link"\cf27 %>\cf25 \
+        \cf26 </\cf27 li\cf26 >\cf13 \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \
+conditionally show sign in sign out\cf2 \kerning1\expnd0\expndtw0 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf30 devise documentation\
+\
+To verify if a user is signed in, use the following helper:\
+\
+user_signed_in?\
+For the current signed-in user, this helper is available:\
+\
+current_user\
+You can access the session for this scope:\
+\
+user_session\
+\
+_header 	partial\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs26 \cf4 \cb31 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec32         \cb31 \strokec33 <%\cb31 \strokec32  \cb31 \strokec34 if\cb31 \strokec32  \cb31 \strokec35 user_signed_in\cb31 \strokec32 ? \cb31 \strokec33 %>\cb31 \strokec32 \
+\cf36 \cb8 \strokec36 \
+          \cf37 \strokec37 <\cf38 \strokec38 li\cf36 \strokec36  \cf39 \strokec39 class\cf36 \strokec36 =\cf40 \strokec40 "nav-item"\cf37 \strokec37 >\cf36 \strokec36 \
+            \cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 link_to\cf36 \strokec36  \cf40 \strokec40 'Sign Out'\cf36 \strokec36 , \cf39 \strokec39 destroy_user_session_path\cf36 \strokec36 , \cf38 \strokec38 method:\cf36 \strokec36  \cf38 \strokec38 :delete\cf36 \strokec36 , \cf38 \strokec38 class:\cf40 \strokec40 "nav-link"\cf38 \strokec38 %>\cf36 \strokec36 \
+          \cf37 \strokec37 </\cf38 \strokec38 li\cf37 \strokec37 >\cf36 \strokec36 \
+\
+          \cf37 \strokec37 <\cf38 \strokec38 li\cf36 \strokec36  \cf39 \strokec39 class\cf36 \strokec36 =\cf40 \strokec40 "nav-item"\cf37 \strokec37 >\cf36 \strokec36 \
+            \cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 link_to\cf36 \strokec36  \cf40 \strokec40 'Edit Profile'\cf36 \strokec36 , \cf39 \strokec39 edit_user_registration_path\cf36 \strokec36 , \cf38 \strokec38 class:\cf40 \strokec40 "nav-link"\cf38 \strokec38 %>\cf36 \strokec36 \
+          \cf37 \strokec37 </\cf38 \strokec38 li\cf37 \strokec37 >\cf36 \strokec36 \
+\cf4 \cb31 \strokec32         \cb31 \strokec33 <%\cb31 \strokec32  \cb31 \strokec34 else\cb31 \strokec32  \cb31 \strokec33 %>\cb31 \strokec32 \
+\cf36 \cb8 \strokec36           \cf37 \strokec37 <\cf38 \strokec38 li\cf36 \strokec36  \cf39 \strokec39 class\cf36 \strokec36 =\cf40 \strokec40 "nav-item"\cf37 \strokec37 >\cf36 \strokec36 \
+            \cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 link_to\cf36 \strokec36  \cf40 \strokec40 'Sign Up'\cf36 \strokec36 , \cf39 \strokec39 new_user_registration_path\cf36 \strokec36 , \cf38 \strokec38 class:\cf40 \strokec40 "nav-link"\cf38 \strokec38 %>\cf36 \strokec36 \
+          \cf37 \strokec37 </\cf38 \strokec38 li\cf37 \strokec37 >\cf36 \strokec36 \
+\
+          \cf37 \strokec37 <\cf38 \strokec38 li\cf36 \strokec36  \cf39 \strokec39 class\cf36 \strokec36 =\cf40 \strokec40 "nav-item"\cf37 \strokec37 >\cf36 \strokec36 \
+            \cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 link_to\cf36 \strokec36  \cf40 \strokec40 'Sign In'\cf36 \strokec36 , \cf39 \strokec39 new_user_session_path\cf36 \strokec36 , \cf38 \strokec38 class:\cf40 \strokec40 "nav-link"\cf38 \strokec38 %>\cf36 \strokec36 \
+          \cf37 \strokec37 </\cf38 \strokec38 li\cf37 \strokec37 >\cf36 \strokec36 \
+\cf4 \cb31 \strokec32         \cb31 \strokec33 <%\cb31 \strokec32  \cb31 \strokec34 end\cb31 \strokec32  \cb31 \strokec33 %>\cb1 \strokec36 \
+\cf41 \strokec41 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs24 \cf30 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+need to set up associations so that user1 can only see their own data. \
+{\field{\*\fldinst{HYPERLINK "https://guides.rubyonrails.org/association_basics.html"}}{\fldrslt https://guides.rubyonrails.org/association_basics.html}}\
+\
+models/entry.rb\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs26 \cf42 \cb8 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec42 class\cf36 \strokec36  \cf43 \strokec43 Entry < ApplicationRecord\cf36 \strokec36 \
+\cf4 \cb31 \strokec32   \cb31 \strokec35 belongs_to\cb31 \strokec32  \cb31 \strokec33 :user\cb31 \strokec32 \
+\cf42 \cb8 \strokec42 end\cf41 \cb1 \strokec41 \
+\
+\cf30 \strokec36 model/user.rb\cf41 \strokec41 \
+\
+\cf42 \cb8 \strokec42 class\cf36 \strokec36  \cf43 \strokec43 User < ApplicationRecord\cf36 \strokec36 \
+  \cf39 \strokec39 devise\cf36 \strokec36  \cf38 \strokec38 :database_authenticatable\cf36 \strokec36 , \cf38 \strokec38 :registerable\cf36 \strokec36 ,\
+         \cf38 \strokec38 :recoverable\cf36 \strokec36 , \cf38 \strokec38 :rememberable\cf36 \strokec36 , \cf38 \strokec38 :validatable\cf36 \strokec36 \
+\cf4 \cb31 \strokec32       \cb31 \strokec35 has_many\cb31 \strokec32  \cb31 \strokec33 :entries\cb31 \strokec32 \
+\cf42 \cb8 \strokec42 end\cf41 \cb1 \strokec41 \
+\
+\cf30 \strokec36 in schema, need a user id in entries to associate it with a certain entry\
+\
+create a migration (adds a timestamped migration file in db)\
+\cf44 \strokec32 $ rails g migration add_user_id_to_friends user_id:integer:index\cf41 \strokec41 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs24 \cf30 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 push the migration\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs26 \cf2 \expnd0\expndtw0\kerning0
+$ rails db:migrate\
+\
+\cf30 now entries table has user_id\
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf36 \cb8 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec36   \cf39 \strokec39 create_table\cf36 \strokec36  \cf40 \strokec40 "entries"\cf36 \strokec36 , \cf38 \strokec38 force:\cf36 \strokec36  \cf38 \strokec38 :cascade\cf36 \strokec36  \cf42 \strokec42 do\cf36 \strokec36  |\cf39 \strokec39 t\cf36 \strokec36 |\
+    \cf39 \strokec39 t\cf36 \strokec36 .\cf46 \strokec46 string\cf36 \strokec36  \cf40 \strokec40 "food"\cf36 \strokec36 \
+    \cf39 \strokec39 t\cf36 \strokec36 .\cf46 \strokec46 string\cf36 \strokec36  \cf40 \strokec40 "activity"\cf36 \strokec36 \
+    \cf39 \strokec39 t\cf36 \strokec36 .\cf46 \strokec46 string\cf36 \strokec36  \cf40 \strokec40 "feeling"\cf36 \strokec36 \
+    \cf39 \strokec39 t\cf36 \strokec36 .\cf46 \strokec46 string\cf36 \strokec36  \cf40 \strokec40 "pain"\cf36 \strokec36 \
+    \cf39 \strokec39 t\cf36 \strokec36 .\cf46 \strokec46 datetime\cf36 \strokec36  \cf40 \strokec40 "created_at"\cf36 \strokec36 , \cf38 \strokec38 precision:\cf36 \strokec36  \cf47 \strokec47 6\cf36 \strokec36 , \cf38 \strokec38 null:\cf36 \strokec36  \cf38 \strokec38 false\cf36 \strokec36 \
+    \cf39 \strokec39 t\cf36 \strokec36 .\cf46 \strokec46 datetime\cf36 \strokec36  \cf40 \strokec40 "updated_at"\cf36 \strokec36 , \cf38 \strokec38 precision:\cf36 \strokec36  \cf47 \strokec47 6\cf36 \strokec36 , \cf38 \strokec38 null:\cf36 \strokec36  \cf38 \strokec38 false\cf36 \strokec36 \
+  \cf4 \cb31 \strokec32   \cb31 \strokec35 t\cb31 \strokec32 .\cb31 \strokec48 integer\cb31 \strokec32  \cb31 \strokec49 "user_id"\cb31 \strokec32 \
+    \cb31 \strokec35 t\cb31 \strokec32 .\cb31 \strokec48 index\cb31 \strokec32  [\cb31 \strokec49 "user_id"\cb31 \strokec32 ], \cb31 \strokec33 name:\cb31 \strokec32  \cb31 \strokec49 "index_entries_on_user_id"\cb31 \strokec32 \
+\cf36 \cb8 \strokec36   \cf42 \strokec42 end\cf41 \cb1 \strokec41 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs24 \cf30 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+views/_form.html.erb		add at bottom\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 want that to be a hidden field and pre-populated with what the current user id is. \
+\
+use devise current_user. This will submit to our database the user id associated with the entry. \cf30 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs26 \cf36 \cb8 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec36   \cf37 \strokec37 <\cf38 \strokec38 div\cf36 \strokec36  \cf39 \strokec39 class\cf36 \strokec36 =\cf40 \strokec40 "field"\cf37 \strokec37 >\cf36 \strokec36 \
+    \cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 form\cf36 \strokec36 .\cf46 \strokec46 number_field\cf36 \strokec36  \cf38 \strokec38 :user_id\cf36 \strokec36 , \cf38 \strokec38 id:\cf36 \strokec36  \cf38 \strokec38 :entry_user_id\cf36 \strokec36 , \cf38 \strokec38 class:\cf40 \strokec40 "form-control"\cf36 \strokec36 , \cf38 \strokec38 value:\cf36 \strokec36  \cf39 \strokec39 current_user\cf36 \strokec36 .\cf46 \strokec46 id\cf36 \strokec36 , \cf38 \strokec38 type:\cf36 \strokec36  \cf38 \strokec38 :hidden\cf36 \strokec36  \cf38 \strokec38 %>\cf36 \strokec36 \
+  \cf37 \strokec37 </\cf38 \strokec38 div\cf37 \strokec37 >\cf41 \cb1 \strokec41 \
+\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs24 \cf6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 need to authorize the app take a new field user_id. \
+\
+colrollers/entries_controller.rb\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs26 \cf36 \cb8 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec36     \cf50 \strokec50 # Only allow a list of trusted parameters through.\cf36 \strokec36 \
+    \cf42 \strokec42 def\cf36 \strokec36  \cf46 \strokec46 entry_params\cf36 \strokec36 \
+      \cf39 \strokec39 params\cf36 \strokec36 .\cf46 \strokec46 require\cf36 \strokec36 (\cf38 \strokec38 :entry\cf36 \strokec36 ).\cf46 \strokec46 permit\cf36 \strokec36 (\cf38 \strokec38 :food\cf36 \strokec36 , \cf38 \strokec38 :activity\cf36 \strokec36 , \cf38 \strokec38 :feeling\cf36 \strokec36 , \cf38 \strokec38 :pain\cf36 \strokec36 , \cf4 \cb31 \strokec33 :user_id\cf36 \cb8 \strokec36 )\
+    \cf42 \strokec42 end\cf41 \cb1 \strokec41 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs24 \cf30 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 don\'92t want other users\'92 entries to show up. or to be able to delete others\'92 stuff\
+\
+entries_controller.rb		add to top below other before_action\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs26 \cf42 \cb8 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec42 class\cf36 \strokec36  \cf43 \strokec43 EntriesController < ApplicationController\cf36 \strokec36 \
+  \cf39 \strokec39 before_action\cf36 \strokec36  \cf38 \strokec38 :set_entry\cf36 \strokec36 , \cf38 \strokec38 only:\cf36 \strokec36  \cf38 \strokec38 %i[ show edit update destroy ]
+\fs24 \cf6 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+
+\fs26 \cf51 \cb8 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec32   \cf51 \strokec35 before_action\cf51 \strokec32  \cf51 \strokec33 :authenitcate_user!\cf51 \strokec32 , \cf51 \strokec33 except:\cf51 \strokec32  [ \cf51 \strokec33 :index\cf51 \strokec32 ,\cf51 \strokec33 :show\cf51 \strokec32  ]\cf41 \cb1 \strokec41 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs24 \cf6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+write method to check if correct user.\
+\
+entries_controller 			above private\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf30 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs26 \cf36 \cb8 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec36   \cf42 \strokec42 def\cf36 \strokec36  \cf46 \strokec46 correct_user\cf36 \strokec36 \
+    \cf39 \strokec39 @entry\cf36 \strokec36  = \cf39 \strokec39 current_user\cf36 \strokec36 .\cf46 \strokec46 entries\cf36 \strokec36 .\cf46 \strokec46 find_by\cf36 \strokec36 (\cf38 \strokec38 :id\cf36 \strokec36  \cf39 \strokec39 params\cf36 \strokec36 [\cf38 \strokec38 :id\cf36 \strokec36 ])\
+    \cf39 \strokec39 redirect_to\cf36 \strokec36  \cf39 \strokec39 entries_path\cf36 \strokec36 , \cf38 \strokec38 notice:\cf36 \strokec36  \cf40 \strokec40 "Not authorized to edit this Entry"\cf36 \strokec36  \cf42 \strokec42 if\cf36 \strokec36  \cf39 \strokec39 @entry\cf36 \strokec36 .\cf46 \strokec46 nil?\cf36 \strokec36 \
+  \cf42 \strokec42 end\cf41 \cb1 \strokec41 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs24 \cf30 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+add before_action \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs26 \cf52 \cb8 \expnd0\expndtw0\kerning0
+  before_action :correct_user, only: [:edit, :update, :destroy]\cf13 \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs24 \cf30 \kerning1\expnd0\expndtw0 \
+\cf2 change new and create CRUD method.
+\fs26 \cf42 \cb8 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec42 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf42 \
+\cf36 \strokec36   \cf42 \strokec42 def\cf36 \strokec36  \cf46 \strokec46 new\cf36 \strokec36 \
+    \cf50 \strokec50 # @entry = Entry.new\cf36 \strokec36 \
+\cf4 \cb31 \strokec32     \cb31 \strokec35 @entry\cb31 \strokec32  = \cb31 \strokec35 current_user\cb31 \strokec32 .\cb31 \strokec48 entries\cb31 \strokec32 .\cb31 \strokec48 build\cb31 \strokec32 \
+\cf36 \cb8 \strokec36   \cf42 \strokec42 end\cf36 \strokec36 \
+\cf41 \cb1 \strokec41 \
+\cf36 \cb8 \strokec36   \cf42 \strokec42 def\cf36 \strokec36  \cf46 \strokec46 create\cf36 \strokec36 \
+    \cf50 \strokec50 # @entry = Entry.new(entry_params)\cf36 \strokec36 \
+\cf4 \cb31 \strokec32     \cb31 \strokec35 @entry\cb31 \strokec32  = \cb31 \strokec35 current_user\cb31 \strokec32 .\cb31 \strokec48 entries\cb31 \strokec32 .\cb31 \strokec48 build\cb31 \strokec32 (\cb31 \strokec35 entry_params\cb31 \strokec32 )\cb1 \strokec36 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs24 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 hide other user\'92s entries\
+\
+views/entries/index		simply don\'92t run the tr code.  \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs26 \cf37 \cb8 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec37 <\cf38 \strokec38 tbody\cf37 \strokec37 >\cf36 \strokec36 \
+    \cf38 \strokec38 <%\cf36 \strokec36  \cf39 \strokec39 @entries\cf36 \strokec36 .\cf46 \strokec46 each\cf36 \strokec36  \cf42 \strokec42 do\cf36 \strokec36  |\cf39 \strokec39 entry\cf36 \strokec36 | \cf38 \strokec38 %>\cf36 \strokec36 \
+\cf4 \cb31 \strokec32       \cb31 \strokec33 <%\cb31 \strokec32  \cb31 \strokec34 if\cb31 \strokec32  \cb31 \strokec35 entry\cb31 \strokec32 .\cb31 \strokec48 user\cb31 \strokec32  == \cb31 \strokec35 current_user\cb31 \strokec32  \cb31 \strokec33 %>\cb31 \strokec32 \
+\cf36 \cb8 \strokec36         \cf38 \strokec38 <%\cf36 \strokec36  \cf39 \strokec39 pain_styling\cf36 \strokec36  = \cf39 \strokec39 entry\cf36 \strokec36 .\cf46 \strokec46 pain\cf36 \strokec36 .\cf46 \strokec46 include?\cf36 \strokec36 (\cf40 \strokec40 "back"\cf36 \strokec36 ) ? \cf40 \strokec40 "table-danger"\cf36 \strokec36  : \cf40 \strokec40 ""\cf36 \strokec36  \cf38 \strokec38 %>\cf36 \strokec36 \
+        \cf37 \strokec37 <\cf38 \strokec38 tr\cf37 \strokec37 >\cf36 \strokec36 \
+          \cf37 \strokec37 <\cf38 \strokec38 td\cf37 \strokec37 >\cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 entry\cf36 \strokec36 .\cf46 \strokec46 food\cf36 \strokec36  \cf38 \strokec38 %>\cf37 \strokec37 </\cf38 \strokec38 td\cf37 \strokec37 >\cf36 \strokec36 \
+          \cf37 \strokec37 <\cf38 \strokec38 td\cf37 \strokec37 >\cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 entry\cf36 \strokec36 .\cf46 \strokec46 activity\cf36 \strokec36  \cf38 \strokec38 %>\cf37 \strokec37 </\cf38 \strokec38 td\cf37 \strokec37 >\cf36 \strokec36 \
+          \cf37 \strokec37 <\cf38 \strokec38 td\cf37 \strokec37 >\cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 entry\cf36 \strokec36 .\cf46 \strokec46 feeling\cf36 \strokec36  \cf38 \strokec38 %>\cf37 \strokec37 </\cf38 \strokec38 td\cf37 \strokec37 >\cf36 \strokec36 \
+          \cf37 \strokec37 <\cf38 \strokec38 td\cf36 \strokec36  \cf39 \strokec39 class\cf36 \strokec36 =\cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 pain_styling\cf38 \strokec38 %>\cf36 \strokec36  \cf37 \strokec37 >\cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 entry\cf36 \strokec36 .\cf46 \strokec46 pain\cf36 \strokec36  \cf38 \strokec38 %>\cf37 \strokec37 </\cf38 \strokec38 td\cf37 \strokec37 >\cf36 \strokec36 \
+          \cf37 \strokec37 <\cf38 \strokec38 td\cf37 \strokec37 >\cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 entry\cf36 \strokec36 .\cf46 \strokec46 created_at\cf36 \strokec36 .\cf46 \strokec46 strftime\cf36 \strokec36 (\cf40 \strokec40 "%m/%d/%Y at %I:%M%p"\cf36 \strokec36 ) \cf38 \strokec38 %>\cf37 \strokec37 </\cf38 \strokec38 td\cf37 \strokec37 >\cf36 \strokec36 \
+          \cf37 \strokec37 <\cf38 \strokec38 td\cf37 \strokec37 >\cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 link_to\cf36 \strokec36  \cf40 \strokec40 'Show'\cf36 \strokec36 , \cf39 \strokec39 entry\cf36 \strokec36  \cf38 \strokec38 %>\cf37 \strokec37 </\cf38 \strokec38 td\cf37 \strokec37 >\cf36 \strokec36 \
+          \cf37 \strokec37 <\cf38 \strokec38 td\cf37 \strokec37 >\cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 link_to\cf36 \strokec36  \cf40 \strokec40 'Edit'\cf36 \strokec36 , \cf46 \strokec46 edit_entry_path\cf36 \strokec36 (\cf39 \strokec39 entry\cf36 \strokec36 ) \cf38 \strokec38 %>\cf37 \strokec37 </\cf38 \strokec38 td\cf37 \strokec37 >\cf36 \strokec36 \
+          \cf37 \strokec37 <\cf38 \strokec38 td\cf37 \strokec37 >\cf38 \strokec38 <%=\cf36 \strokec36  \cf39 \strokec39 link_to\cf36 \strokec36  \cf40 \strokec40 'Delete'\cf36 \strokec36 , \cf39 \strokec39 entry\cf36 \strokec36 , \cf38 \strokec38 method:\cf36 \strokec36  \cf38 \strokec38 :delete\cf36 \strokec36 , \cf38 \strokec38 data:\cf36 \strokec36  \{ \cf38 \strokec38 confirm:\cf36 \strokec36  \cf40 \strokec40 'Are you sure?'\cf36 \strokec36  \} \cf38 \strokec38 %>\cf37 \strokec37 </\cf38 \strokec38 td\cf37 \strokec37 >\cf36 \strokec36 \
+        \cf37 \strokec37 </\cf38 \strokec38 tr\cf37 \strokec37 >\cf36 \strokec36 \
+\cf4 \cb31 \strokec32         \cb31 \strokec33 <%\cb31 \strokec32  \cb31 \strokec34 end\cb31 \strokec32  \cb31 \strokec33 %>\cb31 \strokec32 \
+\cf36 \cb8 \strokec36       \cf38 \strokec38 <%\cf36 \strokec36  \cf42 \strokec42 end\cf36 \strokec36  \cf38 \strokec38 %>\cf36 \strokec36 \
+  \cf37 \strokec37 </\cf38 \strokec38 tbody\cf37 \strokec37 >\cf41 \cb1 \strokec41 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\fs24 \cf6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+make time/date created a link to the show page for the entry\
+}
